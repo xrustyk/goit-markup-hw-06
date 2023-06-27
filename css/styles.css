@@ -109,6 +109,16 @@ body {
   display: none;
 }
 
+.mobile-menu-icon {
+  fill: #2e2f42;
+}
+
+.mobile-menu-btn {
+  border: none;
+  background-color: transparent;
+  margin: 24px 0;
+}
+
 /* hero */
 
 .section-hero {
