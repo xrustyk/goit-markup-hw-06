@@ -218,6 +218,7 @@ body {
 .mobile-menu-socials {
 }
 .mobile-social-list {
+  display: flex;
 }
 
 .mobile-social-item {
