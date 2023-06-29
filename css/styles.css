@@ -664,8 +664,7 @@ body {
 /* portfolio */
 
 .section-portfolio-display {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding: 48px 0;
 }
 
 .portfolio-button {
@@ -678,7 +677,7 @@ body {
   cursor: pointer;
   color: var(--primary-brand);
   background-color: var(--light-color);
-  padding: 12px 24px;
+  padding: 8px 16px;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -715,29 +714,34 @@ body {
 
 .portfolio-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  row-gap: 16px;
+  column-gap: 24px;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 72px;
+  margin-bottom: 48px;
 }
 
 .project-list {
   display: flex;
   flex-wrap: wrap;
+  row-gap: 48px;
 }
 
 .portfolio-box {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .project-item {
-  margin-right: 24px;
-  margin-bottom: 48px;
+  /* margin-right: 24px;
+  margin-bottom: 48px; */
 }
 
-.project-item:nth-child(3) {
+/* .project-item:nth-child(3) {
   margin-right: 0;
 }
 .project-item:nth-child(6) {
@@ -752,7 +756,7 @@ body {
 }
 .project-item:nth-child(8) {
   margin-bottom: 0;
-}
+} */
 
 .portfolio-cover {
   position: relative;
@@ -1066,6 +1070,14 @@ body {
   .hero-title {
     text-transform: capitalize;
   }
+
+  .portfolio-list {
+    max-width: 270px;
+  }
+
+  .project-list {
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1192,6 +1204,18 @@ body {
     gap: 24px;
   }
 
+  .portfolio-list {
+    justify-content: center;
+  }
+
+  .portfolio-button {
+    padding: 12px 24px;
+  }
+
+  .project-list {
+    column-gap: 24px;
+  }
+
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -1225,6 +1249,19 @@ body {
 
   .logo-header {
     margin-right: 120px;
+  }
+
+  .portfolio-list {
+    margin-bottom: 64px;
+  }
+
+  .section-portfolio-display {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  .project-list {
+    row-gap: 72px;
   }
 }
 
@@ -1370,5 +1407,14 @@ body {
 
   .subscribe-input::placeholder {
     color: #ffffff;
+  }
+
+  .section-portfolio-display {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+
+  .portfolio-list {
+    margin-bottom: 72px;
   }
 }
