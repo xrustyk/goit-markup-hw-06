@@ -112,8 +112,14 @@ body {
   margin-bottom: 32px;
   margin-left: auto;
   margin-right: 24px;
-  /* transition: background-color var(--transition-effect),
-    border var(--transition-effect); */
+  transition: background-color var(--transition-effect),
+    border var(--transition-effect);
+}
+
+.close-menu-btn:hover,
+.close-menu-btn:focus {
+  background-color: var(--pressed-state);
+  border: none;
 }
 
 .close-menu-icon {
