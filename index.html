@@ -39,29 +39,30 @@
                             111-11-11</a></li>
                 </ul>
             </address>
-            <button type="button" class="open-menu-btn">
+            <button type="button" class="open-menu-btn" js-open-menu>
                 <svg class="open-menu-icon" width="32" height="22">
                     <use href="./images/icons.svg#icon-mobile-menu"></use>
                 </svg>
             </button>
         </div>
-        <div class="mobile-menu">
+        <div class="mobile-menu is-hidden" js-menu-container>
             <div>
-                <button type="button" class="close-menu-btn">
+                <button type="button" class="close-menu-btn" js-close-menu>
                     <svg class="close-menu-icon" width="8" height="8">
                         <use href="./images/icons.svg#icon-mobile-close"></use>
                     </svg>
                 </button>
                 <ul class="mobile-menu-list list">
-                    <li class="mobile-menu-item"><a href="./index.html" class="mobile-menu-link link current">Studio</a>
+                    <li class="mobile-menu-item"><a href="./index.html"
+                            class="mobile-menu-link link mobile-current">Studio</a>
                     </li>
                     <li class="mobile-menu-item"><a href="./portfolio.html" class="mobile-menu-link link">Portfolio</a>
                     </li>
                     <li class="mobile-menu-item"><a href="" class="mobile-menu-link link">Contacts</a></li>
                 </ul>
             </div>
-            <div>
-                <address class="contacts">
+            <div class="mobile-address-container">
+                <address class="mobile-contacts">
                     <ul class="mobile-contacts-menu list">
                         <li class="mobile-contacts-item"><a href="tel:+110001111111" class="mobile-phone-link link">+11
                                 (000)
@@ -369,7 +370,7 @@
     </main>
 
     <!-- Footer -->
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="footer-container container">
             <div class="footer-inf">
                 <a href="./index.html" class="logo-footer link">Web<span class="span-logo-footer">Studio</span></a>
@@ -377,9 +378,9 @@
                     &
                     growth
                     solutions.</p>
-            </div> -->
-    <!-- Footer social -->
-    <!-- <div class="footer-social">
+            </div>
+            <!-- Footer social -->
+            <div class="footer-social">
                 <p class="footer-social-text">Social media</p>
                 <ul class="footer-social-list list">
                     <li class="footer-social-item">
@@ -411,12 +412,11 @@
                         </a>
                     </li>
                 </ul>
-            </div> -->
-    <!-- Footer subscribe -->
-    <!-- <div class="subscribe">
+            </div>
+            <!-- Footer subscribe -->
+            <div class="subscribe">
                 <p class="subscribe-title">Subscribe</p>
                 <form class="subscribe-form" name="subscribe-form">
-
                     <label class="subscribe-label">
                         <input type="email" name="email" placeholder="E-mail" class="subscribe-input">
                     </label>
@@ -429,7 +429,7 @@
                 </form>
             </div>
         </div>
-    </footer> -->
+    </footer>
 
     <!-- Modal -->
     <div class="backdrop is-hidden" data-modal>
@@ -493,6 +493,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
