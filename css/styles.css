@@ -1262,7 +1262,6 @@ body {
   .features-item-block {
     background: var(--light-color);
     border-radius: 4px;
-    width: 264px;
     height: 112px;
     margin-bottom: 8px;
     display: flex;
