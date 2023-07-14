@@ -71,7 +71,8 @@ body {
 .open-menu-btn {
   border: none;
   background-color: transparent;
-  margin: 24px 0;
+  padding: 24px 0;
+  display: flex;
 }
 
 .open-menu-icon {
