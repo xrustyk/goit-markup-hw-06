@@ -88,7 +88,7 @@ body {
   z-index: 999;
   padding-left: 40px;
   padding-bottom: 40px;
-  padding-top: 24px;
+  padding-top: 80px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -113,6 +113,7 @@ body {
   border-radius: 50%;
   position: absolute;
   right: 24px;
+  top: 24px;
   transition: background-color var(--transition-effect),
     border var(--transition-effect);
 }
@@ -129,10 +130,6 @@ body {
 
 .mobile-menu-item {
   margin-bottom: 40px;
-}
-
-.mobile-menu-list {
-  margin-top: 56px;
 }
 
 .mobile-menu-link {
